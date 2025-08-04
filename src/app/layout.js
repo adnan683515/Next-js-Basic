@@ -18,6 +18,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
+  
   return (
     <html lang="en">
       <body
@@ -25,7 +28,7 @@ export default function RootLayout({ children }) {
       >
         <Navber></Navber>
 
-        <main className="min-h-screen max-w-7xl place-items-center place-content-center">
+        <main className="min-h-screen   max-w-7xl mx-auto ">
           {children}
         </main>
 

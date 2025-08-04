@@ -1,9 +1,15 @@
+"use client"
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
 const Navber = () => {
+
+    const pathname = usePathname()
+    
+    if(pathname.includes('Deshboard')) return <></>
     return (
-        <nav className='flex justify-center items-center'>
+        <nav className='flex justify-center items-center bg-orange-700 text-black py-3'>
             <ul className='flex justify-between items-center w-1/2'>
                 <Link href={'/'}>
                     <li>Home</li>
